@@ -34,7 +34,7 @@ def get_model(disease):
             f.write(response.content)
 
     # 모델 로딩
-    model = torch.load(local_path, map_location=torch.device('cpu'))
+    model = torch.load(local_path, map_location=torch.device('cpu'), weights_only=False)
     model.eval()
     loaded_models[disease] = model
     return model
