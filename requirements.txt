@@ -16,7 +16,8 @@ efficientnet_pytorch==0.7.1
 filelock==3.13.1
 Flask==3.1.1
 fsspec==2025.5.1
-git-filter-repo==2.45.0
+# 아래 패키지는 개발 도구이며, Render 배포 시 불필요. 로컬에서만 사용하세요
+# git-filter-repo==2.45.0
 gunicorn==23.0.0
 idna==3.10
 itsdangerous==2.2.0
@@ -41,6 +42,7 @@ soupsieve==2.5
 spotipy==2.24.0
 sqlparse==0.5.2
 sympy==1.14.0
+# Render용 CPU 전용 PyTorch (CUDA 없는 버전)
 torch==2.7.0
 torchvision==0.22.0
 typing_extensions==4.14.0
