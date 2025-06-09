@@ -11,7 +11,8 @@ app = Flask(__name__)
 model_urls = {
     "미세각질": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model1_full.pt",
     "모낭홍반농포": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model4_full.pt",
-    "비듬": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model5_full.pt"
+    "비듬": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model5_full.pt",
+    "피지과다": "/model6_full.pt",
 }
 
 # 모델 캐시 딕셔너리
