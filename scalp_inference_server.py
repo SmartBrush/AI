@@ -10,10 +10,11 @@ app = Flask(__name__)
 # S3에서 다운로드할 모델 URL 목록
 model_urls = {
     "미세각질": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model1_full.pt",
-    "모낭사이홍반": "/model3_full.pt",
+    "탈모": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model2_full.pt",
+    "모낭사이홍반": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model3_full.pt",
     "모낭홍반농포": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model4_full.pt",
     "비듬": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model5_full.pt",
-    "피지과다": "/model6_full.pt",
+    "피지과다": "https://smartbrush-models.s3.ap-northeast-2.amazonaws.com/model6_full.pt",
 }
 
 # 모델 캐시 딕셔너리
